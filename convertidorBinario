@@ -5,7 +5,7 @@ static Scanner sc=new Scanner(System.in);
 static String binario;
 	public static void numeroUsuario(int x) {
 		
-		if (x<0) {
+		if (x<=0) {
 			System.out.println("No se puede hacer la conversión");
 			System.exit(0);
 		}else {
