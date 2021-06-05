@@ -16,7 +16,7 @@ static String binario;
 		return binario=Integer.toBinaryString(x);
 	}
 	public static void main(String[] args) {
-		// CONVERTIDOR BINARIO
+		//  CONVERTIDOR BINARIO
 		int contador = 0;
 		do {
 		System.out.println("Introduce tu número ");
