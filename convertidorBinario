@@ -1,0 +1,32 @@
+package metodosverano;
+import java.util.Scanner;
+public class program {
+static Scanner sc=new Scanner(System.in);
+static String binario;
+	public static void numeroUsuario(int x) {
+		
+		if (x<0) {
+			System.out.println("No se puede hacer la conversión");
+			System.exit(0);
+		}else {
+			System.out.println("Usted ha elegido el número= "+x);
+		}
+	}
+	public static String convertidorBinario(int x) {
+		return binario=Integer.toBinaryString(x);
+	}
+	public static void main(String[] args) {
+		// CONVERTIDOR BINARIO
+		int contador = 0;
+		do {
+		System.out.println("Introduce tu número ");
+		int x=sc.nextInt();
+		program.numeroUsuario(x);
+		System.out.println("Vamos a pasar a decimal el siguiente número...");
+		System.out.println("El resultado de su número a binario es="+program.convertidorBinario(x));
+		contador++;
+	}
+		while(contador!=3);
+
+	}
+}
